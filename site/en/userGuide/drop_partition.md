@@ -18,6 +18,7 @@ Dropping a partition irreversibly deletes all data within it.
 
 ```python
 from pymilvus import Collection
+collection = Collection("book")      # Get an existing collection.
 collection.drop_partition("novel")
 ```
 
